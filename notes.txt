@@ -1,0 +1,11 @@
+yarn init
+yarn add grunt
+yarn add grunt-contrib-sass
+yarn add load-grunt-tasks
+yarn add grunt-contrib-watch
+
+yarn grunt watch
+
+npm install grunt-haml2html —save-dev
+npm install grunt-contrib-concat —save-dev
+npm install grunt-contrib-imagemin —save-dev
