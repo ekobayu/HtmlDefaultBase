@@ -30,3 +30,47 @@ $(".scroll").on("click touchstart", function (event) {
     hashTagActive = this.hash;
   }
 });
+
+$(document).ready(function() {
+  $('.carousel-news').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+        loop: false,
+        margin: 20
+      }
+    }
+  })
+
+  $('.carousel-partner').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 6,
+        loop: false,
+        margin: 20
+      }
+    }
+  })
+})
