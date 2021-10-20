@@ -9,3 +9,25 @@ yarn grunt watch
 npm install grunt-haml2html —save-dev
 npm install grunt-contrib-concat —save-dev
 npm install grunt-contrib-imagemin —save-dev
+
+
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@type" : "LocalBusiness",
+  "name": "Acura Labs Indonesia",
+  "description": "Acura Labs is a fintech alternative credit scoring indonesia with technology service provider specializing in intelligent risk
+  management.",
+  "email" : "customer.support@acuralabs.ai",
+  "priceRange": "RpRpRpRp",
+  "address" : {
+    "@type" : "PostalAddress",
+    "addressLocality" : "Jakarta",
+    "addressCountry" : "Indonesia"
+  },
+  "url": "https://acuralabs.ai",
+  "sameAs" : [ "https://www.linkedin.com/company/acura-labs-indonesia"],
+  "image": "https://acuralabs.ai/static/img/logo.svg"
+}
+</script>
+
