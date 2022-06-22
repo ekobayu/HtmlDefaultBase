@@ -1,6 +1,7 @@
 yarn init
 yarn add grunt
-yarn add grunt-contrib-sass
+yarn add grunt-sass
+yarn add node-sass
 yarn add load-grunt-tasks
 yarn add grunt-contrib-watch
 

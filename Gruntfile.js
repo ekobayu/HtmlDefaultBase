@@ -4,11 +4,15 @@ require('load-grunt-tasks')(grunt);
 grunt.initConfig({
 
   sass: {
-	 dist: {
-		files: {
-      'build/css/style.css': 'source/sass/style.scss'
-		}
-	}
+    options: {
+      implementation: sass,
+      sourceMap: true
+    },
+    dist: {
+      files: {
+        'build/css/style.css': 'source/sass/style.scss'
+      }
+	  }
   },
 
   watch: {
