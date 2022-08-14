@@ -145,7 +145,7 @@ footer {
   }
 }
 
-// tablet
+// tablet portrait landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .form-inline {
     width: auto !important;
@@ -153,6 +153,11 @@ footer {
   header .form-search .form-control {
     width: 65%;
   }
+}
+
+// tablet ipad pro landscape
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+
 }
 
 //mobile

@@ -38,5 +38,8 @@ d-none d-md-block
 hide in desktop
 d-sm-none
 
+hide in tablet
+d-md-none d-lg-block
+
 transition hover
 transition: 0.3s ease-in-out;
