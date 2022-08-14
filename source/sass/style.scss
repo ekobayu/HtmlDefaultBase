@@ -1,9 +1,14 @@
 @import './component/home';
 
+html {
+  font-size: 62.5%; //for rem settings 12px == 1.2rem
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
 }
+
 section {
   padding: 50px 0;
   position: relative;
