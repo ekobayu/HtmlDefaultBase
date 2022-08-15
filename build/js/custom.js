@@ -32,24 +32,33 @@ $(".scroll").on("click touchstart", function (event) {
 });
 
 // $(document).ready(function() {
-//   $('.carousel-news').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     responsiveClass: true,
-//     nav: true,
-//     dots: false,
-//     responsive: {
-//       0: {
-//         items: 1,
+//   $('.center').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     dots: true,
+//     variableWidth: true,
+//     prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+//     nextArrow:"<button type='button' class='slick-next pull-right'></button>",
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 3
+//         }
 //       },
-//       600: {
-//         items: 3,
-//       },
-//       1000: {
-//         items: 3,
-//         loop: false,
-//         margin: 20
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 2
+//         }
 //       }
-//     }
-//   })
+//     ]
+//   });
 // })
