@@ -1,0 +1,13 @@
+{
+  "name": "html-default",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^7.0.1"
+  }
+}
