@@ -7,7 +7,7 @@ body {
   background-color: white;
   font-size: 1.4rem;
   -moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 section {
@@ -17,16 +17,10 @@ section {
 }
 
 header {
-  h1 {
-    font-size: 24px;
-    color: #434343;
-    letter-spacing: 2px;
-  }
-}
-
-nav {
-  &.navbar-dark {
-    background-color: black;
+  nav {
+    &.navbar-dark {
+      background-color: black;
+    }
   }
 }
 
@@ -41,7 +35,7 @@ a:focus {
 
 .sr-only {
   border: 0;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -53,25 +47,31 @@ a:focus {
 .section5 {
   background-color: #e8e8e8;
   border-bottom: 1px solid grey;
+
   h4 {
     color: #553135;
     font-weight: 900;
   }
+
   .nav-link {
     color: black;
     display: inherit;
     padding-left: 0px;
     padding-bottom: 0px;
   }
+
   .footer1 {
     p {
       margin-top: 1rem;
     }
+
     .contact {
       color: black;
     }
+
     .socmed {
       margin-top: 20px;
+
       img {
         width: 30px;
         margin-left: 10px;
@@ -82,6 +82,7 @@ a:focus {
 
 footer {
   margin: 20px;
+
   .copyright {
     @media (max-width: 768px) {
       text-align: left !important;
@@ -100,19 +101,13 @@ footer {
   .form-inline {
     width: auto !important;
   }
-  header .form-search .form-control {
-    width: 65%;
-  }
 }
 
 // tablet ipad pro landscape
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-
-}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {}
 
 //mobile
 @media (max-width: 768px) {
-  .owl-theme .owl-dots,
   .owl-theme .owl-nav {
     text-align: center;
   }

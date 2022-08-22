@@ -1,17 +1,18 @@
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    if ($(this).scrollTop() >= 50) {
+        $('#return-to-top').fadeIn(200); 
     } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        $('#return-to-top').fadeOut(200);  
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+$('#return-to-top').click(function() {     
     $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
+        scrollTop : 0                      
     }, 500);
 });
 
+// scroll to href target
 var hashTagActive = "";
 $(".scroll").on("click touchstart", function (event) {
   if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
@@ -30,6 +31,20 @@ $(".scroll").on("click touchstart", function (event) {
     hashTagActive = this.hash;
   }
 });
+
+// show and hide menu when scroll
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementsByClassName("fixed-top")[0].style.cssText = 'top:0';
+//     document.getElementsByClassName("navbar-brand")[0].style.cssText = 'width: auto;padding-top: 0;display: block;';
+//   } else {
+//     document.getElementsByClassName("fixed-top")[0].style.cssText = 'top:-70px';
+//     document.getElementsByClassName("navbar-brand")[0].style.cssText = 'width: 60px;padding-top: 50px;display: block;';
+//   }
+//   prevScrollpos = currentScrollPos;
+// } 
 
 // $(document).ready(function() {
 //   $('.center').slick({
