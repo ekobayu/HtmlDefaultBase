@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%; //for rem settings 12px == 1.2rem
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +23,19 @@ header {
       background-color: black;
     }
   }
+}
+
+// zoom image
+// img:hover {
+//   transform: scale(1.1);
+// }
+
+// line text wrap
+.line-clamps{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 @mixin border-focusblue() {
@@ -87,28 +101,5 @@ footer {
     @media (max-width: 768px) {
       text-align: left !important;
     }
-  }
-}
-
-@media (min-width: 992px) {
-  .owl-nav {
-    display: none;
-  }
-}
-
-// tablet portrait landscape
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .form-inline {
-    width: auto !important;
-  }
-}
-
-// tablet ipad pro landscape
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {}
-
-//mobile
-@media (max-width: 768px) {
-  .owl-theme .owl-nav {
-    text-align: center;
   }
 }
