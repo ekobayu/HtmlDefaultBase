@@ -58,3 +58,15 @@ transition: 0.3s ease-in-out;
 //mobile
 @media (max-width: 768px) {
 }
+
+get element id
+document.getElementById("myP").innerHTML
+
+get element class
+document.getElementsByClassName("myP")[0].innerHTML
+
+get element tag
+document.getElementsByTagName("myP").innerHTML
+
+get all same selector
+document.querySelectorAll('.priceText');

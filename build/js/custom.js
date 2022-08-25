@@ -32,6 +32,17 @@ $(".scroll").on("click touchstart", function (event) {
   }
 });
 
+// on focus in first field contact
+// $('.form-actions .form-submit').on('click', function () {
+//   setTimeout(function () {
+//     if($('.form-control.error').first()){
+//       $('.form-control.error').first().focus()
+//     } else if ($('.form-check-input.error').first()) {
+//       $('.form-check-input.error').first().focus()
+//     }
+//   }, 100);
+// });
+
 // show and hide menu when scroll
 // var prevScrollpos = window.pageYOffset;
 // window.onscroll = function() {
@@ -46,6 +57,26 @@ $(".scroll").on("click touchstart", function (event) {
 //   prevScrollpos = currentScrollPos;
 // } 
 
+// simplify number rupiah
+// $(document).ready(function() {
+//   const elements = document.querySelectorAll('.priceText');
+//   elements.forEach(el => {
+//     if (el.textContent >= 1000000000000) {
+//       return parseFloat((el.textContent / 1000000000000).toFixed(2)).toLocaleString() + 'T'
+//     }
+//     if (el.textContent >= 1000000000) {
+//       return parseFloat((el.textContent / 1000000000).toFixed(2)).toLocaleString() + 'B'
+//     }
+//     if (el.textContent >= 1000000) {
+//       return parseFloat((el.textContent / 1000000).toFixed(2)).toLocaleString() + 'M'
+//     }
+//     if (el.textContent >= 1000) {
+//       el.textContent = parseFloat((el.textContent / 1000).toFixed(2)).toLocaleString() + 'K'
+//     }
+//   });
+// });
+
+// slick carousel
 // $(document).ready(function() {
 //   $('.center').slick({
 //     centerMode: true,
