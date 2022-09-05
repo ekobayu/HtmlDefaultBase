@@ -41,6 +41,7 @@ d-sm-none
 hide in tablet
 d-md-none d-lg-block
 
+// animate transition
 transition hover
 transition: 0.3s ease-in-out;
 

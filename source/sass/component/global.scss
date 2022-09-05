@@ -36,6 +36,7 @@ header {
   }
 }
 
+// pagination
 .navigation {
   justify-content: center;
   display: flex;
@@ -97,42 +98,6 @@ a:focus {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.section5 {
-  background-color: #e8e8e8;
-  border-bottom: 1px solid grey;
-
-  h4 {
-    color: #553135;
-    font-weight: 900;
-  }
-
-  .nav-link {
-    color: black;
-    display: inherit;
-    padding-left: 0px;
-    padding-bottom: 0px;
-  }
-
-  .footer1 {
-    p {
-      margin-top: 1rem;
-    }
-
-    .contact {
-      color: black;
-    }
-
-    .socmed {
-      margin-top: 20px;
-
-      img {
-        width: 30px;
-        margin-left: 10px;
-      }
-    }
-  }
 }
 
 footer {

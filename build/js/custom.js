@@ -13,6 +13,7 @@ $('#return-to-top').click(function() {
 });
 
 // scroll to href target
+// add class scroll on a href
 var hashTagActive = "";
 $(".scroll").on("click touchstart", function (event) {
   if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
@@ -27,7 +28,7 @@ $(".scroll").on("click touchstart", function (event) {
     //go to destination
     $('html,body').animate({
       scrollTop: dest
-    }, 2000, 'swing');
+    }, 500, 'swing');
     hashTagActive = this.hash;
   }
 });
