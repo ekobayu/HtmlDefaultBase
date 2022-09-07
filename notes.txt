@@ -60,6 +60,9 @@ transition: 0.3s ease-in-out;
 @media (max-width: 768px) {
 }
 
+// desktop
+@media (min-width: 1200px) {}
+
 get element id
 document.getElementById("myP").innerHTML
 
