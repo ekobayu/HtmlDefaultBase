@@ -63,13 +63,13 @@ $(".scroll").on("click touchstart", function (event) {
 //   const elements = document.querySelectorAll('.priceText');
 //   elements.forEach(el => {
 //     if (el.textContent >= 1000000000000) {
-//       return parseFloat((el.textContent / 1000000000000).toFixed(2)).toLocaleString() + 'T'
+//       el.textContent = parseFloat((el.textContent / 1000000000000).toFixed(2)).toLocaleString() + 'T'
 //     }
 //     if (el.textContent >= 1000000000) {
-//       return parseFloat((el.textContent / 1000000000).toFixed(2)).toLocaleString() + 'B'
+//       el.textContent = parseFloat((el.textContent / 1000000000).toFixed(2)).toLocaleString() + 'B'
 //     }
 //     if (el.textContent >= 1000000) {
-//       return parseFloat((el.textContent / 1000000).toFixed(2)).toLocaleString() + 'M'
+//       el.textContent = parseFloat((el.textContent / 1000000).toFixed(2)).toLocaleString() + 'M'
 //     }
 //     if (el.textContent >= 1000) {
 //       el.textContent = parseFloat((el.textContent / 1000).toFixed(2)).toLocaleString() + 'K'
