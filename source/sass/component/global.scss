@@ -34,6 +34,20 @@ header {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .breadcrumb-item {
+    + .breadcrumb-item::before  {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    &:last-child {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 550px;
+      @media (max-width: 768px) {
+        width: 150px;
+      }
+    }
 }
 
 // pagination

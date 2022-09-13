@@ -80,7 +80,9 @@ $(".scroll").on("click touchstart", function (event) {
 // slick carousel
 // $(document).ready(function() {
 //   $('.center').slick({
-//     centerMode: true,
+//     autoplay: true,
+//     centerMode: false,
+//     autoplaySpeed: 5000,
 //     centerPadding: '60px',
 //     slidesToShow: 3,
 //     dots: true,
