@@ -32,13 +32,13 @@ npm install grunt-contrib-imagemin —save-dev
 }
 </script>
 
-hide in mobile
+// hide in mobile
 d-none d-md-block
 
-hide in desktop
+// hide in desktop
 d-sm-none
 
-hide in tablet
+// hide in tablet
 d-md-none d-lg-block
 
 // animate transition
@@ -61,18 +61,19 @@ transition: 0.3s ease-in-out;
 }
 
 // desktop
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
-get element id
+// get element id
 document.getElementById("myP").innerHTML
 
-get element class
+// get element class
 document.getElementsByClassName("myP")[0].innerHTML
 
-get element tag
+// get element tag
 document.getElementsByTagName("myP").innerHTML
 
-get all same selector
+// get all same selector
 document.querySelectorAll('.priceText');
 
 // display grid two column

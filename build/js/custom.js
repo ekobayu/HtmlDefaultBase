@@ -87,8 +87,8 @@ $(".scroll").on("click touchstart", function (event) {
 //     slidesToShow: 3,
 //     dots: true,
 //     variableWidth: true,
-//     prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
-//     nextArrow:"<button type='button' class='slick-next pull-right'></button>",
+//     prevArrow:"<button aria-label="Previous" type='button' class='slick-prev pull-left'></button>",
+//     nextArrow:"<button aria-label="Next" type='button' class='slick-next pull-right'></button>",
 //     responsive: [
 //       {
 //         breakpoint: 768,
