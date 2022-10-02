@@ -124,3 +124,16 @@ footer {
     }
   }
 }
+
+/** DISABLE ZOOM INPUT - iphone
+===================================*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px !important; } }
+input[type='text'],
+input[type='number'],
+textarea {
+  font-size: 16px; }
+  
