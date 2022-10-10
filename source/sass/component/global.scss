@@ -27,7 +27,7 @@ header {
 
 .breadcrumb {
   a {
-    color: #2259C9;
+    color: #2259c9;
     text-decoration: none;
   }
   @media (max-width: 768px) {
@@ -35,7 +35,7 @@ header {
     padding-right: 30px;
   }
   .breadcrumb-item {
-    + .breadcrumb-item::before  {
+    + .breadcrumb-item::before {
       margin-right: 10px;
       margin-left: 10px;
     }
@@ -62,7 +62,7 @@ header {
       padding-right: 30px;
 
       .current {
-        background: #F5C7A9;
+        background: #f5c7a9;
         border-radius: 20px;
         width: 38px;
         display: block;
@@ -96,8 +96,8 @@ header {
 }
 
 @mixin border-focusblue() {
-  outline: 2px solid #42628B;
-  box-shadow: 0 0 5PX #ACC1DC;
+  outline: 2px solid #42628b;
+  box-shadow: 0 0 5px #acc1dc;
 }
 
 a:focus {
@@ -131,9 +131,11 @@ footer {
   select,
   textarea,
   input {
-    font-size: 16px !important; } }
+    font-size: 16px !important;
+  }
+}
 input[type='text'],
 input[type='number'],
 textarea {
-  font-size: 16px; }
-  
+  font-size: 16px;
+}

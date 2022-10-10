@@ -1,37 +1,45 @@
-// ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {
-        $('#return-to-top').fadeIn(200); 
-    } else {
-        $('#return-to-top').fadeOut(200);  
-    }
-});
-$('#return-to-top').click(function() {     
-    $('body,html').animate({
-        scrollTop : 0                      
-    }, 500);
-});
+// ===== Scroll to Top ====
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+    $('#return-to-top').fadeIn(200)
+  } else {
+    $('#return-to-top').fadeOut(200)
+  }
+})
+$('#return-to-top').click(function () {
+  $('body,html').animate(
+    {
+      scrollTop: 0
+    },
+    500
+  )
+})
 
 // scroll to href target
 // add class scroll on a href
-var hashTagActive = "";
-$(".scroll").on("click touchstart", function (event) {
-  if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
-    event.preventDefault();
+var hashTagActive = ''
+$('.scroll').on('click touchstart', function (event) {
+  if (hashTagActive != this.hash) {
+    //this will prevent if the user click several times the same link to freeze the scroll.
+    event.preventDefault()
     //calculate destination place
-    var dest = 0;
+    var dest = 0
     if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-      dest = $(document).height() - $(window).height();
+      dest = $(document).height() - $(window).height()
     } else {
-      dest = $(this.hash).offset().top;
+      dest = $(this.hash).offset().top
     }
     //go to destination
-    $('html,body').animate({
-      scrollTop: dest
-    }, 500, 'swing');
-    hashTagActive = this.hash;
+    $('html,body').animate(
+      {
+        scrollTop: dest
+      },
+      500,
+      'swing'
+    )
+    hashTagActive = this.hash
   }
-});
+})
 
 // on focus in first field contact
 // $('.form-actions .form-submit').on('click', function () {
@@ -56,7 +64,7 @@ $(".scroll").on("click touchstart", function (event) {
 //     document.getElementsByClassName("navbar-brand")[0].style.cssText = 'width: 60px;padding-top: 50px;display: block;';
 //   }
 //   prevScrollpos = currentScrollPos;
-// } 
+// }
 
 // simplify number rupiah
 // $(document).ready(function() {
