@@ -1,234 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Default Page</title>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Lets do something awesome" />
+    <link rel="icon" sizes="192x192" href="./img/logo.png" />
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Lets do something awesome" />
+    <link rel="apple-touch-icon" href="./img/logo.png" />
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/logo.png" />
+    <meta name="msapplication-TileColor" content="#0288d1" />
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#0288d1" />
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <link rel="canonical" href="http://www.example.com/" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css" />
+    <style>
+      html {
+        margin: 20px 0;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Default Page</title>
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
-  <!-- // favicon size 26x26px -->
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Lets do something awesome">
-  <link rel="icon" sizes="192x192" href="./img/logo.png">
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Lets do something awesome">
-  <link rel="apple-touch-icon" href="./img/logo.png">
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="./img/logo.png">
-  <meta name="msapplication-TileColor" content="#0288d1">
-  <!-- Color the status bar on mobile devices -->
-  <meta name="theme-color" content="#0288d1">
-  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-  <!-- <link rel="canonical" href="http://www.example.com/"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css">
-  <style>
-    /* ------------------------------------------------------------------------------------------------ */
-    /* Preview */
-    /* ------------------------------------------------------------------------------------------------ */
+      body {
+        padding: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin: 0;
+        color: #000;
+        background-color: #f8f8f8;
+      }
 
-    html {
-      margin: 20px 0;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    body {
-      padding: 30px;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 16px;
-      line-height: 1.5em;
-      margin: 0;
-      padding: 0;
-      color: #000;
-      background-color: #f8f8f8;
-    }
+      a {
+        text-decoration: none;
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      header {
+        display: none;
+      }
 
-    a {
-      text-decoration: none;
-    }
+      .index-card {
+        display: block;
+        max-width: 320px;
+        margin: 0 auto;
+        min-height: 300px;
+        background: #ed1c24;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 5px 5px 30px -5px #ddd;
+      }
 
-    header {
-      display: none;
-    }
+      .index-card-label {
+        color: #fff;
+        padding: 15px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
 
-    .index-card {
-      display: block;
-      max-width: 320px;
-      margin: 0 auto;
-      min-height: 300px;
-      background: #ed1c24;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 5px 5px 30px -5px #ddd;
-    }
+      .index-card-header {
+        position: relative;
+        font-family: 'bold', 'Helvetica', sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        text-align: center;
+        background: #f8f8f8;
+        letter-spacing: 1px;
+        padding: 30px 0 20px 0;
+      }
 
-    .index-card-label {
-      color: #fff;
-      padding: 15px;
-      font-weight: 700;
-      text-align: center;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-    }
+      .index-card-header .company-name {
+        font-size: 35px;
+        color: #103851;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
 
-    .index-card-header {
-      position: relative;
-      font-family: 'bold', 'Helvetica', sans-serif;
-      font-size: 14px;
-      overflow: hidden;
-      text-align: center;
-      background: #f8f8f8;
-      letter-spacing: 1px;
-      padding: 30px 0 20px 0;
-    }
+      .index-card-header h4 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #919191;
+      }
 
-    .index-card-header .company-name {
-      font-size: 35px;
-      color: #103851;
-      font-weight: 700;
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
+      .index-card-list-wrap {
+        background: #fff;
+        border-top: 0;
+      }
 
-    .index-card-header h4 {
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #919191;
-    }
+      .index-card-item a {
+        display: block;
+        font-weight: 700;
+        color: #101010;
+        padding: 13px 20px;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+        border-top: 1px solid #fff;
+        border-left: 5px solid black;
+        transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+      }
 
-    .index-card-list-wrap {
-      background: #fff;
-      border-top: 0;
-    }
+      .index-card-item a:hover,
+      .index-card-item a.active {
+        color: white;
+        background: black;
+        border-top: 1px solid #fff;
+        border-left: 5px solid black;
+        text-decoration: none;
+      }
 
-    .index-card-item a {
-      display: block;
-      font-weight: 700;
-      color: #101010;
-      padding: 13px 20px;
-      font-size: 0.9em;
-      letter-spacing: 0.5px;
-      border-top: 1px solid #fff;
-      border-left: 5px solid black;
-      transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
-      -webkit-transition: all 0.3s linear;
-    }
+      .fa {
+        vertical-align: middle;
+        line-height: 25px;
+      }
 
-    .index-card-item a:hover,
-    .index-card-item a.active {
-      color: white;
-      background: black;
-      border-top: 1px solid #fff;
-      border-left: 5px solid black;
-      text-decoration: none;
-    }
+      .index-card-search {
+        position: relative;
+        background: #fff;
+        padding: 20px;
+      }
 
-    .fa {
-      vertical-align: middle;
-      line-height: 25px;
-    }
+      .index-card-search input {
+        box-shadow: none;
+        font-size: 14px;
+        padding: 15px 20px;
+        width: 100%;
+        border-radius: 3px;
+        border: 0;
+        background: #efefef;
+        color: #444;
+      }
 
-    .index-card-search {
-      position: relative;
-      background: #fff;
-      padding: 20px;
-    }
+      input:focus {
+        outline: 0;
+      }
 
-    .index-card-search input {
-      box-shadow: none;
-      font-size: 14px;
-      padding: 15px 20px;
-      width: 100%;
-      border-radius: 3px;
-      /*border:1px solid #ddd; */
-      border: 0;
-      background: #efefef;
-      color: #444;
-    }
+      footer {
+        background-color: transparent;
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+        padding: 15px;
+        position: relative;
+      }
+    </style>
+  </head>
 
-    input:focus {
-      outline: 0;
-    }
+  <body>
+    <header></header>
+    <main>
+      <article></article>
+      <div class="index-card">
+        <div class="index-card-label">
+          <span>HTML Page</span>
+        </div>
+        <div class="index-card-header">
+          <div class="img-retina img-icon-index"></div>
+          <figure><img src="./img/logo.png" alt="logo" /></figure>
+        </div>
 
-    footer {
-      background-color: transparent;
-      text-align: center;
-      font-size: 12px;
-      color: #999;
-      padding: 15px;
-      position: relative;
-    }
+        <div class="index-card-list-wrap">
+          <div class="index-card-item">
+            <a href="home.html" target="_blank">
+              Homepage
+              <i class="fa fa-angle-right pull-right"></i>
+            </a>
+          </div>
+        </div>
 
-    /*# sourceMappingURL=preview.css.map */
-  </style>
-</head>
+        <div class="index-card-list-wrap">
+          <div class="index-card-item">
+            <a href="about-us.html" target="_blank">
+              About Us
+              <i class="fa fa-angle-right pull-right"></i>
+            </a>
+          </div>
+        </div>
 
-<body>
-  <header>
-  </header>
-  <main>
-    <article>
-    </article>
-    <div class="index-card">
-      <div class="index-card-label">
-        <span>HTML Page</span>
-      </div>
-      <div class="index-card-header">
-        <div class="img-retina img-icon-index"></div>
-        <figure><img src="./img/logo.png"></figure>
-      </div>
-
-      <div class="index-card-list-wrap">
-        <div class="index-card-item">
-          <a href="home.html" target="_blank">
-            Homepage
-            <i class="fa fa-angle-right pull-right"></i>
-          </a>
+        <div class="index-card-list-wrap">
+          <div class="index-card-item">
+            <a href="contact.html" target="_blank">
+              Contact
+              <i class="fa fa-angle-right pull-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="index-card-list-wrap">
+          <div class="index-card-item">
+            <a href="Blog.html" target="_blank">
+              Blog
+              <i class="fa fa-angle-right pull-right"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="index-card-list-wrap">
-        <div class="index-card-item">
-          <a href="about-us.html" target="_blank">
-            About Us
-            <i class="fa fa-angle-right pull-right"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="index-card-list-wrap">
-        <div class="index-card-item">
-          <a href="news.html" target="_blank">
-            News
-            <i class="fa fa-angle-right pull-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="index-card-list-wrap">
-        <div class="index-card-item">
-          <a href="news-detail.html" target="_blank">
-            News Detail
-            <i class="fa fa-angle-right pull-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-    </footer>
-  </main>
-</body>
-
+      <footer></footer>
+    </main>
+  </body>
 </html>

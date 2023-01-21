@@ -27,5 +27,5 @@ module.exports = function (grunt) {
   // grunt.loadNpmTasks('grunt-haml2html');
   // grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch')
-  grunt.registerTask('default', ['concat', 'sass', 'watch'])
+  grunt.registerTask('default', ['sass', 'watch'])
 }
