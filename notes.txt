@@ -79,3 +79,6 @@ document.querySelectorAll('.priceText');
 // display grid two column
 display: grid;
 grid-template-columns: 1fr 1fr;
+
+// columns
+columns: 2;

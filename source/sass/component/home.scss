@@ -1,23 +1,94 @@
 .home-page {
-  h3 {
-    color: #434343;
-    font-weight: 900;
-    margin-bottom: 30px;
-  }
-  .section1 {
-    color: #434343;
-  }
-  .section2 {
-    .item {
-      img {
-        width: 50%;
-      }
-      p {
-        margin-top: 40px;
-        span {
-          color: #7f6543;
-          font-weight: 900;
+  .section-1 {
+    .cycle-slideshow {
+      width: 100%;
+      .slide {
+        width: 100%;
+        padding: 100px 0;
+        height: 800px;
+        opacity: 0.6;
+        h3 {
+          font-size: 2rem;
+          color: #3e4958;
+          font-weight: 700;
+          right: 0;
+          position: absolute;
+          text-align: right;
+          margin-top: 12%;
+          width: 40%;
+          margin-right: 10%;
+          @media (max-width: 768px) {
+            position: relative;
+            top: 100px;
+            font-size: 1.7rem;
+            text-align: center;
+            margin-top: auto;
+            margin-right: auto;
+            width: 100%;
+          }
         }
+        h4 {
+          font-size: 1.6rem;
+          color: #3e4958;
+          font-weight: 500;
+          right: 0;
+          position: absolute;
+          margin-top: 10%;
+          margin-right: 10%;
+          @media (max-width: 768px) {
+            position: relative;
+            top: 15px;
+            font-size: 1.2rem;
+            margin-top: auto;
+            margin-right: auto;
+          }
+        }
+        .slide-image {
+          padding-right: 0px;
+        }
+        img {
+          display: block;
+          width: auto;
+        }
+        &.cycle-slide {
+          z-index: 0 !important;
+          @media (max-width: 768px) {
+            text-align: center;
+          }
+        }
+      }
+      .cycle-prev,
+      .cycle-next {
+        position: absolute;
+        bottom: 45%;
+        background-color: rgba(255, 255, 255, 0.4);
+        display: block;
+        cursor: pointer;
+        z-index: 1000;
+        transition: opacity 0.5s;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 30px;
+        padding-top: 14px;
+        svg {
+          color: #3e4958;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .cycle-next {
+        right: 0px;
+        margin-right: 16px;
+      }
+      .cycle-prev {
+        left: 0px;
+        margin-left: 16px;
+      }
+      .cycle-slideshow:hover .cycle-prev,
+      .cycle-slideshow:hover .cycle-next {
+        opacity: 1;
       }
     }
   }

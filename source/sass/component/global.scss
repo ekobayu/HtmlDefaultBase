@@ -82,6 +82,26 @@ header {
   }
 }
 
+.left {
+  .column {
+    display: flex;
+    margin-bottom: 65px;
+    .description {
+      h4 {
+        font-weight: 700;
+        color: #676767;
+      }
+      p {
+        color: #676767;
+      }
+    }
+    img {
+      margin-right: 30px;
+      height: 68px;
+    }
+  }
+}
+
 // zoom image
 // img:hover {
 //   transform: scale(1.1);
@@ -117,10 +137,22 @@ a:focus {
 
 footer {
   margin: 20px;
-
+  ul {
+    list-style: none;
+    padding-left: 0;
+    a.nav-link {
+      color: #000;
+    }
+    &.social {
+      display: inline-flex;
+      li {
+        margin-right: 15px;
+      }
+    }
+  }
   .copyright {
     @media (max-width: 768px) {
-      text-align: left !important;
+      // text-align: left !important;
     }
   }
 }
