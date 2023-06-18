@@ -1,16 +1,5 @@
-yarn init
-yarn add grunt
-yarn add grunt-sass
-yarn add node-sass
-yarn add load-grunt-tasks
-yarn add grunt-contrib-watch
-
-yarn grunt watch
-
-npm install grunt-haml2html —save-dev
-npm install grunt-contrib-concat —save-dev
-npm install grunt-contrib-imagemin —save-dev
-
+Running project
+gulp watch
 
 <script type='application/ld+json'>
 {
