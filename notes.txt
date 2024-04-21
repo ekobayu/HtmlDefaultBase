@@ -71,3 +71,6 @@ grid-template-columns: 1fr 1fr;
 
 // columns
 columns: 2;
+
+// margin scroll
+scroll-margin-top: 1em;
