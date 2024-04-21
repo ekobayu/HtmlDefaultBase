@@ -11,7 +11,13 @@ const styleDist = 'assets/build/css/'
 const styleSrc = 'assets/src/styles/style.scss'
 const scriptDist = 'assets/build/js/'
 const scriptCustomSrc = 'assets/src/scripts/custom.js'
-const scriptBasetSrc = ['assets/src/scripts/lib/jquery.min.js', 'assets/src/scripts/lib/bootstrap.bundle.min.js', 'assets/src/scripts/lib/modernizr.min.js', 'assets/src/scripts/lib/jquery.cycle2.min.js', 'assets/src/scripts/lib/jquery.cycle2.carousel.min.js']
+const scriptBasetSrc = [
+  'assets/src/scripts/lib/jquery.min.js',
+  'assets/src/scripts/lib/bootstrap.bundle.min.js',
+  'assets/src/scripts/lib/modernizr.min.js',
+  'assets/src/scripts/lib/jquery.cycle2.min.js',
+  'assets/src/scripts/lib/jquery.cycle2.carousel.min.js'
+]
 
 /*========================================================== 
     Compile SASS into CSS
@@ -22,11 +28,12 @@ gulp.task('styles', function () {
     .pipe(
       sass({
         outputStyle: 'compressed',
+        // outputStyle: 'expanded', // uncomment line for expanded
         errorLogToConsole: true
       })
     )
     .on('error', console.error.bind(console))
-    .pipe(cleanCSS())
+    .pipe(cleanCSS()) // comment line for expanded
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest(styleDist))
 })
