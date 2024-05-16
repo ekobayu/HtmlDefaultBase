@@ -74,3 +74,9 @@ columns: 2;
 
 // margin scroll
 scroll-margin-top: 1em;
+
+// click add class active
+$('.side-widget li').on('click', function (e) {
+    $('.side-widget li').removeClass('active')
+    $(this).addClass('active')
+  })

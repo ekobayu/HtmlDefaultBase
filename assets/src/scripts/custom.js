@@ -11,6 +11,22 @@ $J(document).ready(function () {
   }, 1000)
 })
 
+// // back to top
+// $('#return-to-top').click(function() {      // When arrow is clicked
+//   $('body,html').animate({
+//       scrollTop : 0                       // Scroll to top of body
+//   }, 500)
+// })
+
+// $(window).scroll(function () {
+//     if ($(this).scrollTop() >= 100) {
+//       // If page is scrolled more than 50px
+//       $('#scrollUp').fadeIn(200) // Fade in the arrow
+//     } else {
+//       $('#scrollUp').fadeOut(200) // Else fade out the arrow
+//     }
+//   })
+
 // // on focus in first field contact
 // $('.form-actions .form-submit').on('click', function () {
 //   setTimeout(function () {
