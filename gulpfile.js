@@ -59,9 +59,9 @@ gulp.task('customJavascript', function () {
   return gulp
     .src(scriptCustomSrc)
 
-    .pipe(concat('custom.min.js'))
+    .pipe(concat('custom.js'))
 
-    .pipe(uglify())
+    // .pipe(uglify())
 
     .pipe(gulp.dest(scriptDist))
 })
