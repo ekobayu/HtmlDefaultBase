@@ -2,7 +2,28 @@
 
 HTML default base
 
-## Start project
+## Run Locally
 
-- yarn install
-- gulp watch
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  yarn install
+```
+
+Start the gulp server
+
+```bash
+  gulp watch
+```
