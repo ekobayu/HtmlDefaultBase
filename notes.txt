@@ -80,3 +80,6 @@ $('.side-widget li').on('click', function (e) {
     $('.side-widget li').removeClass('active')
     $(this).addClass('active')
   })
+
+// image src url 
+<img src="./img/logo.svg" alt="logo print screen" />
