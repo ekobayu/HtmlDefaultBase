@@ -19,8 +19,10 @@ section {
 
 header {
   nav {
-    &.navbar-dark {
-      background-color: black;
+    .navbar-nav {
+      .nav-item {
+        position: relative;
+      }
     }
   }
 }
