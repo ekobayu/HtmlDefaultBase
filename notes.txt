@@ -81,5 +81,8 @@ $('.side-widget li').on('click', function (e) {
     $(this).addClass('active')
   })
 
-// image src url 
+// image src url html
 <img src="./img/logo.svg" alt="logo print screen" />
+
+// image src url css
+ background: url('../img/water-ripple.svg'), #fff;

@@ -22,6 +22,14 @@ header {
     .navbar-nav {
       .nav-item {
         position: relative;
+        margin: 0 15px;
+        .dropdown-toggle {
+          &:after {
+            content: url('../img/arrow-dropdown.svg');
+            border: none;
+            vertical-align: 0;
+          }
+        }
       }
     }
   }
