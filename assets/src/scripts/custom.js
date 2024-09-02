@@ -72,36 +72,64 @@ $J(document).ready(function () {
 // });
 
 // // slick carousel
-// $(document).ready(function() {
-//   $('.center').slick({
-//     autoplay: true,
-//     centerMode: false,
-//     autoplaySpeed: 5000,
-//     centerPadding: '60px',
-//     slidesToShow: 3,
-//     dots: true,
-//     variableWidth: true,
-//     prevArrow:"<button aria-label="Previous" type='button' class='slick-prev pull-left'></button>",
-//     nextArrow:"<button aria-label="Next" type='button' class='slick-next pull-right'></button>",
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 3
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 2
-//         }
-//       }
-//     ]
-//   });
-// })
+$(document).ready(function () {
+  $('.center').slick({
+    autoplay: true,
+    centerMode: false,
+    autoplaySpeed: 5000,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    dots: true,
+    variableWidth: true,
+    prevArrow: "<button aria-label='Previous' type='button' class='slick-prev pull-left'></button>",
+    nextArrow: "<button aria-label='Next' type='button' class='slick-next pull-right'></button>",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      }
+    ]
+  })
+
+  $J('.clients').slick({
+    autoplay: true,
+    centerMode: false,
+    autoplaySpeed: 5000,
+    slidesToShow: 5,
+    dots: false,
+    arrows: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 3
+        }
+      }
+    ]
+  })
+})
