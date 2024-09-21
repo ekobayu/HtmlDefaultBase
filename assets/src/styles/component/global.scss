@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'SuisseIntl';
+  font-display: swap;
+  src: url('../fonts/SuisseIntl-Book-WebM.eot');
+  src: url('../fonts/SuisseIntl-Book-WebM.eot') format('embedded-opentype'),
+    url('../fonts/SuisseIntl-Book-WebM.woff2') format('woff2'), url('../fonts/SuisseIntl-Book-WebM.woff') format('woff'),
+    url('../fonts/SuisseIntl-Book-WebM.ttf') format('truetype');
+}
+
 html {
   font-size: 62.5%; //for rem settings 12px == 1.2rem
   scroll-behavior: smooth;
