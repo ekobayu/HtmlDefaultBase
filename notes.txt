@@ -85,4 +85,12 @@ $('.side-widget li').on('click', function (e) {
 <img src="./img/logo.svg" alt="logo print screen" />
 
 // image src url css
- background: url('../img/water-ripple.svg'), #fff;
+background: url('../img/water-ripple.svg'), #fff;
+
+// background overlay shadow
+style="background: linear-gradient(rgba(145, 137, 137, 0.5), rgba(91, 88, 88, 0.5)), url(./img/cover-category.jpg) no-repeat center top;background-size: cover;min-height: 380px;"
+
+// slick js half show in mobile
+.slick-list{
+  padding: 0 17.5vw 0 0;
+}
