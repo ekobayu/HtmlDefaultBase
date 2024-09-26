@@ -94,3 +94,15 @@ style="background: linear-gradient(rgba(145, 137, 137, 0.5), rgba(91, 88, 88, 0.
 .slick-list{
   padding: 0 17.5vw 0 0;
 }
+
+// center absolute
+.arrow {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 25px;
+}
+
+// prepend and append
+$(this).prepend("<li>All</li>");
+$('SUB_DIV1_HTML').appendTo(mainDiv);
