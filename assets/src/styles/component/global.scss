@@ -139,8 +139,11 @@ header {
   box-shadow: 0 0 5px #acc1dc;
 }
 
-a:focus {
-  @include border-focusblue;
+a {
+  text-decoration: none;
+  &:focus {
+    @include border-focusblue;
+  }
 }
 
 .sr-only {
@@ -167,11 +170,6 @@ footer {
       li {
         margin-right: 15px;
       }
-    }
-  }
-  .copyright {
-    @media (max-width: 768px) {
-      // text-align: left !important;
     }
   }
 }
