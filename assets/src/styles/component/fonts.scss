@@ -1,0 +1,57 @@
+// Font weight variables
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// DINNextLTPro-Regular
+@font-face {
+  font-family: 'DINNextLTPro';
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url('./fonts/3B2FA7_18_0.eot');
+  src: url('./fonts/3B2FA7_18_0.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/3B2FA7_18_0.woff2') format('woff2'), url('./fonts/3B2FA7_18_0.woff') format('woff'),
+    url('./fonts/3B2FA7_18_0.ttf') format('truetype');
+}
+
+// Gotham-Book
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-regular;
+  src: url('../fonts/Gotham-Book.otf') format('opentype');
+}
+
+// Gotham-Black
+@font-face {
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-bold;
+  src: url('../fonts/Gotham-Black.otf') format('opentype');
+}
+
+// Gotham-Light
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-light;
+  src: url('../fonts/Gotham-Light.otf') format('opentype');
+}
+
+// Gotham-Medium
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-display: swap;
+  font-weight: $font-weight-medium;
+  src: url('../fonts/Gotham-Medium.otf') format('opentype');
+}
