@@ -157,6 +157,24 @@ a {
   width: 1px;
 }
 
+.chat-external {
+  background-color: #efad1e;
+  border-radius: 40px;
+  bottom: 30px;
+  display: inline-block;
+  padding: 10px 24px;
+  position: fixed;
+  right: 60px;
+  @media (max-width: 768px) {
+    right: 30px;
+  }
+  p {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
 footer {
   margin: 20px;
   ul {
