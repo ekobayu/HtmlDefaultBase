@@ -11,6 +11,28 @@ $J(document).ready(function () {
   }, 1000)
 })
 
+function toggleNavMobile() {
+  $J('.nav-link').bind('click', function () {
+    document.querySelector('.navbar-toggler').click()
+  })
+
+  $J('.navbar-collapse')
+    .on('show.bs.collapse', function () {
+      $J('nav.navbar').addClass('mobile-menu')
+      $J('body').addClass('disable-scroll')
+    })
+    .on('hide.bs.collapse', function () {
+      $J('nav.navbar').removeClass('mobile-menu')
+      $J('body').removeClass('disable-scroll')
+    })
+}
+
+toggleNavMobile()
+
+$J(window).on('resize', function () {
+  toggleNavMobile()
+})
+
 // // back to top
 // $('#return-to-top').click(function() {      // When arrow is clicked
 //   $('body,html').animate({

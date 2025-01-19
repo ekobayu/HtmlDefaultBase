@@ -18,6 +18,9 @@ body {
   font-size: 1.4rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  &.disable-scroll {
+    overflow: hidden;
+  }
 }
 
 section {
