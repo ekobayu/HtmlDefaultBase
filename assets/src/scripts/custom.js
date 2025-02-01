@@ -12,10 +12,12 @@ $J(document).ready(function () {
 })
 
 function toggleNavMobile() {
+  // close menu when click
   $J('.nav-link').bind('click', function () {
     document.querySelector('.navbar-toggler').click()
   })
 
+  // disable scroll when close mobile menu
   $J('.navbar-collapse')
     .on('show.bs.collapse', function () {
       $J('nav.navbar').addClass('mobile-menu')
@@ -31,6 +33,13 @@ toggleNavMobile()
 
 $J(window).on('resize', function () {
   toggleNavMobile()
+})
+
+// copy element
+$J(document).on('click', 'span.copy-color', function () {
+  let copyText = $J(this)[0].textContent
+  navigator.clipboard.writeText(copyText)
+  alert('Copied: ' + copyText)
 })
 
 // // back to top
