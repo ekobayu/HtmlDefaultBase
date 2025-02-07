@@ -9,6 +9,15 @@ $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
 $font-weight-black: 900;
 
+@font-face {
+  font-family: 'SuisseIntl';
+  font-display: swap;
+  src: url('../fonts/SuisseIntl-Book-WebM.eot');
+  src: url('../fonts/SuisseIntl-Book-WebM.eot') format('embedded-opentype'),
+    url('../fonts/SuisseIntl-Book-WebM.woff2') format('woff2'), url('../fonts/SuisseIntl-Book-WebM.woff') format('woff'),
+    url('../fonts/SuisseIntl-Book-WebM.ttf') format('truetype');
+}
+
 // DINNextLTPro-Regular
 @font-face {
   font-family: 'DINNextLTPro';

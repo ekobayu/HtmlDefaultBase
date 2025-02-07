@@ -29,7 +29,9 @@ function toggleNavMobile() {
     })
 }
 
-toggleNavMobile()
+if ($J(window).width() < 766) {
+  toggleNavMobile()
+}
 
 $J(window).on('resize', function () {
   toggleNavMobile()
