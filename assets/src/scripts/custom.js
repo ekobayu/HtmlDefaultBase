@@ -13,7 +13,7 @@ $J(document).ready(function () {
 
 function toggleNavMobile() {
   // close menu when click
-  $J('.nav-link').bind('click', function () {
+  $J('.navbar-collapse .nav-link').bind('click', function () {
     document.querySelector('.navbar-toggler').click()
   })
 
