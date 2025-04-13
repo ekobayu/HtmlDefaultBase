@@ -158,7 +158,7 @@ header {
 
 a {
   text-decoration: none;
-  &:focus {
+  &:focus-visible {
     @include border-focusblue;
   }
 }

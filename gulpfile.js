@@ -16,7 +16,9 @@ const scriptBasetSrc = [
   'assets/src/scripts/lib/bootstrap.bundle.min.js',
   'assets/src/scripts/lib/modernizr.min.js',
   'assets/src/scripts/lib/jquery.cycle2.min.js',
-  'assets/src/scripts/lib/jquery.cycle2.carousel.min.js'
+  'assets/src/scripts/lib/jquery.cycle2.carousel.min.js',
+  'assets/src/scripts/lib/glightbox.min.js',
+  'assets/src/scripts/lib/slick.min.js'
 ]
 
 /*========================================================== 
@@ -56,14 +58,16 @@ gulp.task('baseJavascript', function () {
     Combine JavaScript Custom
 ==========================================================*/
 gulp.task('customJavascript', function () {
-  return gulp
-    .src(scriptCustomSrc)
+  return (
+    gulp
+      .src(scriptCustomSrc)
 
-    .pipe(concat('custom.js'))
+      .pipe(concat('custom.js'))
 
-    // .pipe(uglify())
+      // .pipe(uglify())
 
-    .pipe(gulp.dest(scriptDist))
+      .pipe(gulp.dest(scriptDist))
+  )
 })
 
 // Watch tasks
