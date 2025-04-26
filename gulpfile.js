@@ -18,7 +18,10 @@ const scriptBasetSrc = [
   'assets/src/scripts/lib/jquery.cycle2.min.js',
   'assets/src/scripts/lib/jquery.cycle2.carousel.min.js',
   'assets/src/scripts/lib/glightbox.min.js',
-  'assets/src/scripts/lib/slick.min.js'
+  'assets/src/scripts/lib/slick.min.js',
+  'assets/src/scripts/lib/hc-sticky.js',
+  // 'assets/src/scripts/lib/jquery.background-video.js',
+  'assets/src/scripts/lib/simple-scrollspy.min.js'
 ]
 
 /*========================================================== 
