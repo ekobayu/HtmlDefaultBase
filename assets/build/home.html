@@ -184,7 +184,7 @@
       </section>
 
       <section class="section-2">
-        <div class="row form-kontak">
+        <div class="row form-contact">
           <div class="col-12">
             <label for="nama" class="form-label">Nama Lengkap</label>
             <input type="text" class="form-control" id="nama" placeholder="Michael" />
@@ -220,12 +220,12 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active"
-              id="client-tab"
+              id="tab-1"
               data-bs-toggle="pill"
-              data-bs-target="#pills-client"
+              data-bs-target="#pills-tab-1"
               type="button"
               role="tab"
-              aria-controls="pills-client"
+              aria-controls="pills-tab-1"
               aria-selected="true"
             >
               Client Feedback
@@ -234,12 +234,12 @@
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="google-tab"
+              id="tab-2"
               data-bs-toggle="pill"
-              data-bs-target="#pills-google"
+              data-bs-target="#pills-tab-2"
               type="button"
               role="tab"
-              aria-controls="pills-google"
+              aria-controls="pills-tab-2"
               aria-selected="false"
             >
               Google Review
@@ -248,11 +248,9 @@
         </ul>
 
         <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-client" role="tabpanel" aria-labelledby="client-tab">
-            client
-          </div>
+          <div class="tab-pane fade show active" id="pills-tab-2" role="tabpanel" aria-labelledby="tab-1">client</div>
 
-          <div class="tab-pane fade" id="pills-google" role="tabpanel" aria-labelledby="google-tab">google</div>
+          <div class="tab-pane fade" id="pills-tab-2" role="tabpanel" aria-labelledby="tab-2">google</div>
         </div>
       </section>
     </main>
