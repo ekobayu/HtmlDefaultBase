@@ -58,6 +58,22 @@ header {
         }
       }
     }
+
+    .form-search {
+      background-color: white;
+      border-radius: 50px;
+      margin: 30px auto;
+      .input-group {
+        padding: 8px 25px 8px 25px;
+        svg {
+          margin-top: 6px;
+        }
+        .form-control {
+          border: none;
+          border-radius: 50px;
+        }
+      }
+    }
   }
 }
 
@@ -154,6 +170,13 @@ header {
 @mixin border-focusblue() {
   outline: 2px solid #42628b;
   box-shadow: 0 0 5px #acc1dc;
+}
+
+.ellipsis-text {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 a {

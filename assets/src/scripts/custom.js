@@ -6,7 +6,7 @@ var $J = jQuery.noConflict()
 $J(document).ready(function () {
   // Content setup deferred for optimal performance rating
   setTimeout(function () {
-    toggleNavMobile()
+    // toggleNavMobile()
     initGeneral()
     initSlick()
     arrowToTop()
@@ -18,11 +18,11 @@ $J(document).ready(function () {
 
 function initGeneral() {
   if ($J(window).width() < 766) {
-    toggleNavMobile()
+    // toggleNavMobile()
   }
 
   $J(window).on('resize', function () {
-    toggleNavMobile()
+    // toggleNavMobile()
   })
 
   // pop up video
@@ -38,7 +38,7 @@ function initGeneral() {
   })
 
   // on focus in first field contact
-  $('.form-actions .form-submit').on('click', function () {
+  $J('.form-actions .form-submit').on('click', function () {
     setTimeout(function () {
       if ($('.form-control.error').first()) {
         $('.form-control.error').first().focus()
@@ -69,7 +69,7 @@ function toggleNavMobile() {
 
 function arrowToTop() {
   // back to top
-  $('#return-to-top').click(function () {
+  $J('#return-to-top').click(function () {
     // When arrow is clicked
     $('body,html').animate(
       {
@@ -79,7 +79,7 @@ function arrowToTop() {
     )
   })
 
-  $(window).scroll(function () {
+  $J(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
       // If page is scrolled more than 50px
       $('#scrollUp').fadeIn(200) // Fade in the arrow
@@ -107,7 +107,7 @@ function showHideMenuScroll() {
 
 function simplifyRupiah() {
   // simplify number rupiah
-  $(document).ready(function () {
+  $J(document).ready(function () {
     const elements = document.querySelectorAll('.priceText')
     elements.forEach(el => {
       if (el.textContent >= 1000000000000) {
@@ -184,7 +184,7 @@ function initSlick() {
     }
   })
 
-  $('.center').slick({
+  $J('.center').slick({
     autoplay: true,
     centerMode: false,
     autoplaySpeed: 5000,
